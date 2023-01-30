@@ -130,7 +130,8 @@ int main()
 	printf("\n\tPor favor, escolha a opção desejada no nosso menu");
 	printf("\n\n\t\tVocê deseja: \n\t 1 - Incluir novo aluno");
 	printf("\n\t 2 - Consultar alunos cadastrados");
-	printf("\n\t 3 - Excluir alunos cadastrados\n");
+	printf("\n\t 3 - Excluir alunos cadastrados");
+	printf("\n\t 4 - Finalizar o sistema\n");
 	printf("Opção:");
 	
 	scanf("\t%d", &dec_user);
@@ -148,7 +149,11 @@ int main()
 		case 3:
 			delet_user();
 			break;
-		
+		case 4:
+			printf("Obrigado por utilizar o sistema!");
+			return 0;
+			break;
+			
 		default:
 			printf("\tOpção Inválida, por gentileza escolha entre as opções disponíveis\n");
 			system("pause");}
